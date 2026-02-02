@@ -13,4 +13,6 @@ RUN playwright install --with-deps
 
 COPY . .
 
+ENV PYTHONPATH=/app
+
 CMD ["pytest", "--alluredir=allure-results"]
